@@ -1,2 +1,3 @@
 # UOL-Web-Dev-Team-Assignment
- Team assignment for the University of London web development course
+
+This project, which is part of the University of London's Web Development class. The goal is to create a	website for a fictitious theme park.
