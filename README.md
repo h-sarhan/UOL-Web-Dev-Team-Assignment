@@ -6,7 +6,7 @@ This project is part of the University of London's Web Development class. The go
 
 | Name                 | GitHub Name                 |
 | -------------------- | --------------------------- |
-| Irfanullah Jan       | Enter your github name here |
+| Irfanullah Jan       | irfanullahjan               |
 | Heng-Seng Ting       | Enter your github name here |
 | Hassan Sarhan        | h-sarhan                    |
 | Ivan George Kuruvila | Enter your github name here |
