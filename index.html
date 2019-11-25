@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 
     <head>
         <meta charset="utf-8">
         <!--Makes the website responsive-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
-        
-        <title>CoolPark: The coolest park</title>
+
+        <title>Aurora Park: Redefining Fun</title>
     </head>
 
     <body>
         <header>
-            <div id="Logo">
+            <div id="logo-bar">
                 <!--The logo for our website-->
-                <img src='Images/SiteLogo.png' alt="CoolPark Logo" width="200" height="90">
+                <img src="./Images/svg/aurora-park-logo.svg" alt="aurora park logo" id="main-logo">
             </div>
-            <h1>CoolPark</h1>
-        </header>
 
-        <nav>
-            <ul>
-                <li>
+
+            <nav id="navbar">
+
+                <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
+                <a href="Pages/accommodations.html" id="accomodations-button">
+                    <img src="./Images/svg/single-bed.svg" alt="bed icon" class="icon">
+                    <h4>Accommodations</h4>
+                </a>
+
+                <a href="index.html" id="home-button" class="active">
                     <!--This links to the front page-->
-                    <a href="index.html">
-                        <h4>Home</h4>
-                    </a>
-                </li>
-                <li>
-                    <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
-                    <a href="Pages/accommodations.html">
-                        <h4>Accommodations</h4>
-                    </a>
-                </li>
-                <li>
-                    <!--This links to the "Things to Do" page which has information about all the different activities in this park-->
-                    <a href="Pages/things_to_do.html">
-                        <h4>Things To Do</h4>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        <!--The banner image for our main page, we will eventually turn this into a slideshow-->
-        <div id="BannerImage">
-            <img src="Images/Banner.jpg" alt="CoolPark by the Seaside" width="900" height="600">
-        </div>
+                    <img src="./Images/svg/home.svg" alt="home icon" class="icon">
+                    <h4>Home</h4>
+                </a>
 
+                <!--This links to the "Things to Do" page which has information about all the different activities in this park-->
+                <a href="Pages/things_to_do.html" id="things-to-do-button">
+                    <img src="./Images/svg/roller-coaster.svg" alt="roller coaster icon" class="icon">
+                    <h4>Things To Do</h4>
+                </a>
+
+            </nav>
+
+            <!--The banner image for our main page, we will eventually turn this into a slideshow-->
+            <div id="banner-image">
+                <div id="banner-text">
+                    <h1 id="banner-title">Rediscover Fun</h1>
+                    <p id="banner-blurb">Unleash your inner child. Book your next vacation at California's #1 rated
+                        theme
+                        park.</p>
+                </div>
+            </div>
+        </header>
         <!--A section containing 3 different events currently happening at CoolPark-->
         <section id="Events">
             <h4>Events</h4>
@@ -75,7 +77,8 @@
             <ul>
                 <li>
                     <img src="Images/FrontPageHotel.jpeg" alt="One of our hotels" width="200" height="100">
-                    <p>In addition to many fun and varied rides, we also offer competitive packages for world-class 5
+                    <p>In addition to many fun and varied rides, we also offer competitive packages for world-class
+                        5
                         and 4 star resorts and hotels!</p>
                 </li>
                 <li>

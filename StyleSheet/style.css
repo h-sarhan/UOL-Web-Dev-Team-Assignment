@@ -1,106 +1,115 @@
+/* Important colors:
+    #99c1ec
+*/
+
 /*Custom Fonts-------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
 
-
-/*Common CSS-------------------------------------*/
-
+/* CSS reset--------------------------- */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-body{
-    
+/* Common CSS-------------------------------------*/
+body {
+    font-family: "Abel", Arial, Helvetica, "Anton", sans-serif;
+    padding: 30px;
+    background: lightgray;
 }
 
-h1{
-    font-family: Arial, Helvetica,'Anton', sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 2em;
-    color: black;
+/* Logo Bar */
+
+#logo-bar {
+    /* padding-bottom: 0.5rem; */
+    background: #30336b;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #99c1ec;
 }
 
-h2{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 20px;;
-    color: black;
+#main-logo {
+    height: 4rem;
+}
+/* Navbar CSS-------------------------------------------*/
+
+nav {
+    background: #30336b;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
 }
 
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 17px;;
-    color: black;
+nav a {
+    text-align: center;
+    padding: 2rem;
+    flex-basis: 33.333%;
+    list-style: none;
 }
 
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;;
-    color: black;
+nav #home-button {
+    border-right: 1px solid #99c1ec;
+    border-left: 1px solid #99c1ec;
 }
 
-
-
-
-/*Header CSS---------------------------------------*/
-
-header{
-    
+nav .active,
+nav a:hover {
+    background-color: #1e185e;
 }
 
-header h1{
-  
+nav a:link,
+nav a:visited {
+    color: #444;
+    text-decoration: none;
 }
 
-header object{
-  
+.icon {
+    height: 1.5rem;
+    width: auto;
+    /* color: ; */
 }
 
-/*Nav CSS-------------------------------------------*/
-
-nav{
-    
+nav a h4 {
+    display: inline;
+    font-size: 1.3rem;
+    color: #99c1ec;
 }
 
-nav ol{
-    color: black;
+/* Banner */
+#banner-image {
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.144),
+            rgba(0, 0, 0, 0.829)
+        ),
+        url("../Images/Banner.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-nav li{
-    
+#banner-text {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    text-align: right;
+    color: #f4f4f4;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 10px;
 }
 
-nav li a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 1em;
-    color:hsl(0,0%,0%);
+#banner-title {
+    font-size: 4rem;
 }
 
-/*Index.html CSS------------------------------------*/
+#banner-blurb {
+    font-size: 1.2rem;
+}
 
+/* Index.html CSS------------------------------------*/
 
 table {
-  border: 3px solid black;
+    border: 3px solid black;
 }
-
-
-
-
-
-
-
-
