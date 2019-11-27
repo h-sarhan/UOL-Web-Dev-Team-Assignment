@@ -1,6 +1,11 @@
 /* Important colors:
-    #99c1ec
-*/
+	primary     : #30336b
+	secondary   : #99c1ec
+	carrot      : #e67e22
+	gray        : #444
+	light gray  : #d3d3d3
+	lighter gray: #f3f3f3
+	*/
 
 /*Custom Fonts-------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
@@ -9,99 +14,22 @@
 /* CSS reset--------------------------- */
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	margin    : 0;
+	padding   : 0;
 }
 
 /* Common CSS-------------------------------------*/
 body {
 	font-family: "Abel", Arial, Helvetica, "Anton", sans-serif;
-	padding: 30px;
-	background: lightgray;
+	padding    : 30px;
+	background : #d3d3d3;
 }
 
-/* Logo Bar */
-
-.logo-bar {
-	/* padding-bottom: 0.5rem; */
-	background: #30336b;
-	padding: 0.5rem;
-	text-align: center;
-	border-bottom: 1px solid #99c1ec;
+table {
+	border: 3px solid black;
 }
 
-.main-logo__img {
-	height: 4rem;
-}
-
-/* Navbar CSS-------------------------------------------*/
-
-.navbar {
-	background: #30336b;
-	display: flex;
-	justify-content: space-around;
-	justify-content: center;
-}
-
-.navbar__btn {
-	text-align: center;
-	padding: 2rem;
-	flex-basis: 33.333%;
-	list-style: none;
-}
-
-.home-btn {
-	border-right: 1px solid #99c1ec;
-	border-left: 1px solid #99c1ec;
-}
-
-.navbar__btn--active,
-.navbar__btn:hover {
-	background-color: #1e185e;
-}
-
-.btn:link,
-.btn:visited {
-	color: #444;
-	text-decoration: none;
-}
-
-.btn__icon {
-	height: 1.5rem;
-	width: auto;
-	/* color: ; */
-}
-
-.btn__text {
-	display: inline;
-	font-size: 1.3rem;
-	color: #99c1ec;
-}
-
-/* Banner */
-.banner {
-	position: relative;
-	height: 90vh;
-	background-image: linear-gradient(
-			rgba(0, 0, 0, 0.144),
-			rgba(0, 0, 0, 0.685)
-		),
-		url("../Images/Banner.jpg");
-	background-size: cover;
-	background-position: bottom;
-}
-
-.banner__content {
-	position: absolute;
-	width: 50%;
-	bottom: 0;
-	right: 0;
-	text-align: right;
-	color: #f4f4f4;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	padding-right: 20px;
-	padding-bottom: 20px;
-}
+/* Utility Classes */
 
 .l-heading {
 	font-size: 4rem;
@@ -111,8 +39,112 @@ body {
 	font-size: 1.2rem;
 }
 
-/* Index.html CSS------------------------------------*/
+.btn:link,
+.btn:visited {
+	color          : #444;
+	text-decoration: none;
+}
 
-table {
-	border: 3px solid black;
+/* Logo Bar -------------------------------- */
+
+.logo-bar {
+	/* padding-bottom: 0.5rem; */
+	background       : #30336b;
+	padding          : 0.5rem;
+	text-align       : center;
+	border-bottom    : 1px solid #99c1ec;
+}
+
+.main-logo__img {
+	height: 4rem;
+}
+
+/* Navbar -------------------------------------------*/
+
+.navbar {
+	background     : #30336b;
+	display        : flex;
+	justify-content: space-around;
+	justify-content: center;
+}
+
+.navbar__btn {
+	text-align: center;
+	padding   : 2rem;
+	flex-basis: 33.333%;
+	list-style: none;
+}
+
+.home-btn {
+	border-right: 1px solid #99c1ec;
+	border-left : 1px solid #99c1ec;
+}
+
+.navbar__btn--active,
+.navbar__btn:hover {
+	background-color: #1e185e;
+}
+
+
+.navbar__icon {
+	height: 1.5rem;
+	width : auto;
+
+}
+
+.btn__text {
+	display  : inline;
+	font-size: 1.3rem;
+	color    : #99c1ec;
+}
+
+/* Banner */
+.banner {
+	position: relative;
+	height  : 90vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
+			rgba(0, 0, 0, 0.685)),
+		url("../Images/Banner.jpg");
+	background-size    : cover;
+	background-position: bottom;
+}
+
+.banner__content {
+	position      : absolute;
+	width         : 50%;
+	bottom        : 0;
+	right         : 0;
+	text-align    : right;
+	color         : #f4f4f4;
+	font-family   : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding-right : 20px;
+	padding-bottom: 20px;
+}
+
+/* Events Section */
+
+
+.events__container {
+	display: flex;
+	margin : 1rem 0;
+}
+
+.event {
+	flex      : 1;
+	border    : solid #d3d3d3 10px;
+	list-style: none;
+	cursor    : pointer;
+}
+
+
+.event__image {
+	width : 100%;
+	height: 300px;
+}
+
+.event__caption {
+	text-align: center;
+	font-size : 1.5rem;
+	background: #e67e22;
+	border    : 3px dotted #f4f4f4;
 }
