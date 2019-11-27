@@ -57,11 +57,11 @@
                 <li class="event"><img class="event__image" src="Images/Halloween.jpg"
                         alt="Spooky halloween themed scene">
 
-                    <div class="event__caption">Halloween themed rides and fun activities! </div>
+                    <div class="event__caption">Halloween themed rides and fun activities!</div>
                 </li>
                 <li class="event"><img class="event__image" src="Images/WaterPark.jpg"
                         alt="A group of adults in the middle of a water slide">
-                    <div class="event__caption">Experience our brand new water park</div>
+                    <div class="event__caption">Experience our brand new water park!</div>
                 </li>
                 <li class="event"><img class="event__image" src="Images/sale-2.jpg"
                         alt="A logo indicating a sale of 50 percent">
@@ -71,51 +71,78 @@
         </section>
 
         <!--This is the main section of the website-->
-        <section id="Content">
-            <h4>Rated California's #1 Theme Park on TripAdvisor!</h4>
-            <img src="Images/TripAdvisor.png" alt="TripAdvisor logo" width="100" height="50">
-            <p>Welcome to CoolPark. We are more than just a theme park.</p>
-            <ul>
-                <li>
-                    <img src="Images/FrontPageHotel.jpeg" alt="One of our hotels" width="200" height="100">
-                    <p>In addition to many fun and varied rides, we also offer competitive packages for world-class
-                        5
-                        and 4 star resorts and hotels!</p>
+        <section class="content">
+            <ul class="content__container">
+                <li class="content__card">
+                    <img src="Images/FrontPageHotel.jpeg" alt="One of our hotels" class="content__img">
+                    <div class="content__text">
+                        <h1 class="content__title">World Class Hotels!</h1>
+                        <p class="content__caption">In addition to many fun and varied rides, we also offer competitive
+                            packages for world-class
+                            5
+                            and 4 star resorts and hotels!</p>
+                        <a href="./Pages/accommodations.html" class="content__btn ">Read More!</a>
+                    </div>
                 </li>
-                <li>
-                    <img src="Images/Show.jpg" alt="One of our many shows" width="200" height="100">
-                    <p>We have daily shows and parades all over the theme park. Suitable for all the family!</p>
+                <li class="content__card">
+                    <img src="Images/Show.jpg" alt="One of our many shows" class="content__img">
+                    <div class="content__text">
+                        <h1 class="content__title">Daily Shows and Parades!</h1>
+                        <div class="content__caption">We have daily shows and parades all over the theme park. Suitable
+                            for
+                            the whole family!</div>
+                        <a href="#" class="content__btn ">Read More!</a>
+                    </div>
                 </li>
-                <li>
-                    <img src="Images/RollerCoaster.jpg" alt="A roller coaster" width="200" height="100">
-                    <p>Our theme park contains California's longest roller coaster!</p>
+                <li class="content__card">
+                    <img src="Images/RollerCoaster.jpg" alt="A roller coaster" class="content__img">
+                    <div class="content__text">
+                        <h1 class="content__title">Record Breaker!</h1>
+                        <div class="content__caption">Our theme park contains California's longest roller coaster!</div>
+                        <a href="./Pages/things_to_do.html" class="content__btn ">Read More!</a>
+                    </div>
+                </li>
+                <li class="content__card">
+                    <img src="Images/TripAdvisor.png" alt="TripAdvisor logo" class="content__img">
+                    <div class="content__text">
+                        <h1 class="content__title">Highly Rated!</h1>
+                        <div class="content__caption">Rated California's #1 Theme Park on TripAdvisor!</div>
+                        <a href="https://www.tripadvisor.com" class="content__btn ">Read More!</a>
+                    </div>
                 </li>
             </ul>
+
         </section>
 
         <!--Small section providing useful information about the website-->
-        <aside id="info">
-            <ul>
-                <li>
+        <aside class="info">
+            <ul class="info__left">
+                <li class="info__item">
                     <strong>Location</strong>: Santa Monica, California
                 </li>
-                <li>
+                <li class="info__item">
                     <strong>Opening Times</strong>: 9:00 AM to 7:00 PM All Week Long
                 </li>
-                <li>
-                    Click <a href="Images/Parking.png">here</a> to find out where to park your car
+                <li class="info__item">
+                    Click <a href="Images/Parking.png" class="info__link">here</a> to find out where to park your car
                 </li>
             </ul>
+            <iframe class="info__right" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/view?zoom=17&center=34.0086%2C-118.4981&key=AIzaSyDAo2ikaJi3xZXaEwcga_jQX4ELRtqZFm8"
+                allowfullscreen></iframe>
+            </iframe>
         </aside>
-        <footer>
+        <footer class=" footer">
             <!--Our footer includes our social media presence some fine print-->
-            <div id="Social">
+            <div class="social">
                 <h4>Follow us on social media!</h4>
-                <img src="Images/facebook.png" alt="the facebook logo" width="20" height="20">
-                <img src="Images/instagram.png" alt="the instagram logo" width="20" height="20">
-                <img src="Images/twitter.png" alt="the twitter logo" width="20" height="20">
+                <div class="icon-container">
+                    <img src="Images/facebook.png" alt="the facebook logo" class="footer__icon">
+                    <img src="Images/instagram.png" alt="the instagram logo" class="footer__icon">
+                    <img src="Images/twitter.png" alt="the twitter logo" class="footer__icon">
+                </div>
             </div>
-            <small>Copyright © CoolPark. All Rights Reserved.</small>
+            <small class="copyright">Copyright © Aurora Park. All Rights Reserved.</small>
         </footer>
     </body>
 

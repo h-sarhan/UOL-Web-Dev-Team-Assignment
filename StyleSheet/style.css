@@ -10,6 +10,7 @@
 /*Custom Fonts-------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /* CSS reset--------------------------- */
 * {
@@ -20,9 +21,11 @@
 
 /* Common CSS-------------------------------------*/
 body {
-	font-family: "Abel", Arial, Helvetica, "Anton", sans-serif;
-	padding    : 30px;
-	background : #d3d3d3;
+	font-family   : "Abel", Arial, Helvetica, "Anton", sans-serif;
+	/* padding    : 30px;
+	background    : #d3d3d3; */
+	background    : #30336b;
+	border        : 30px #d3d3d3 solid;
 }
 
 table {
@@ -98,7 +101,7 @@ table {
 	color    : #99c1ec;
 }
 
-/* Banner */
+/* Banner -------------------------------------*/
 .banner {
 	position: relative;
 	height  : 90vh;
@@ -121,12 +124,12 @@ table {
 	padding-bottom: 20px;
 }
 
-/* Events Section */
+/* Events Section ---------------------------------*/
 
 
 .events__container {
-	display: flex;
-	margin : 1rem 0;
+	display       : flex;
+	/* padding-top: 1rem; */
 }
 
 .event {
@@ -147,4 +150,127 @@ table {
 	font-size : 1.5rem;
 	background: #e67e22;
 	border    : 3px dotted #f4f4f4;
+}
+
+/* Content Section ------------------- */
+
+.content {
+	padding: 5rem;
+}
+
+.content__card {
+	display   : flex;
+	background: #d3d3d3;
+	border    : #444 10px solid;
+}
+
+.content__card:last-child {
+	border-bottom: #444 20px solid;
+}
+
+.content__card:first-child {
+	border-top: #444 20px solid;
+}
+
+.content__img {
+	max-width: 400px;
+	flex     : 1;
+}
+
+.content__text {
+	flex       : 1;
+	font-family: 'Raleway';
+	padding    : 1rem;
+	padding-top: 3rem;
+	text-align : center;
+}
+
+.content__title {
+	padding: 1rem;
+}
+
+.content__btn {
+	display      : inline-block;
+	background   : #1e185e;
+	border-radius: 5px;
+	border       : none;
+	padding      : 0.3rem;
+	margin-top   : 1rem;
+}
+
+.content__btn:link,
+.content__btn:hover,
+.content__btn:visited {
+	cursor         : pointer;
+	color          : #f4f4f4;
+	text-decoration: none;
+}
+
+/* Info and Map -------------- */
+
+.info {
+	display      : flex;
+	height       : 500px;
+	border-top   : aquamarine 3px solid;
+	border-bottom: aquamarine 3px solid;
+}
+
+.info__left {
+	flex       : 1;
+	background : #30336b;
+	padding-top: 170px;
+}
+
+.info__item {
+	list-style : none;
+	text-align : center;
+	line-height: 3rem;
+	color      : #f4f4f4;
+	;
+}
+
+.info__link {
+	text-decoration: none;
+	font-weight    : bold;
+	color          : aquamarine;
+}
+
+.info__right {
+	flex   : 1.4;
+	padding: 1rem;
+}
+
+/* Footer */
+
+.footer {
+	color                : #f4f4f4;
+	/* display           : inline; */
+	/* justify-content   : space-between; */
+	/* disp */
+}
+
+.social {
+	display    : inline-block;
+	text-align : left;
+	clear      : both;
+	margin-left: 5px;
+}
+
+.copyright {
+	text-align : center;
+	text-align : right;
+	float      : right;
+	padding-top: 1.5rem;
+}
+
+.icon-container {
+	display        : flex;
+	height         : 1.2rem;
+	justify-content: space-around;
+
+}
+
+.footer__icon {
+	width : 20px;
+	cursor: pointer;
 }
