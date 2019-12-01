@@ -83,6 +83,16 @@ table {
 	border-left : 1px solid #99c1ec;
 }
 
+.ttd-btn {
+	border-right: 1px solid #99c1ec;
+	border-left : 1px solid #99c1ec;
+}
+
+.acc-btn {
+	border-right: 1px solid #99c1ec;
+	border-left : 1px solid #99c1ec;
+}
+
 .navbar__btn--active,
 .navbar__btn:hover {
 	background-color: #1e185e;
@@ -102,12 +112,32 @@ table {
 }
 
 /* Banner -------------------------------------*/
-.banner {
+.banner__home {
 	position: relative;
 	height  : 90vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
 			rgba(0, 0, 0, 0.685)),
 		url("../Images/Banner.jpg");
+	background-size    : cover;
+	background-position: bottom;
+}
+
+.banner__ttd {
+	position: relative;
+	height  : 90vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
+			rgba(0, 0, 0, 0.685)),
+		url("../Images/GameOfWar.jpg");
+	background-size    : cover;
+	background-position: bottom;
+}
+
+.banner__acc {
+	position: relative;
+	height  : 90vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
+			rgba(0, 0, 0, 0.685)),
+		url("../Images/CoolParkThemeResort.jpg");
 	background-size    : cover;
 	background-position: bottom;
 }
@@ -273,4 +303,17 @@ table {
 .footer__icon {
 	width : 20px;
 	cursor: pointer;
+}
+
+/* Input */
+.input {
+    text-align : center;
+    height : 2rem;
+}
+
+/* Button */
+.button {
+    text-align : center;
+    width : 10rem;
+    height : 2rem;
 }
