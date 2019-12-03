@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
-
+    <script src="https://kit.fontawesome.com/734e2b76ce.js" crossorigin="anonymous"></script>
     <title>Aurora Park: Redefining Fun</title>
   </head>
 
@@ -369,13 +369,9 @@
     <section class="events">
       <ul class="events__container">
         <li class="event">
-          <img
-            class="event__image"
-            src="Images/Halloween.jpg"
-            alt="Spooky halloween themed scene"
-          />
+          <img class="event__image" src="Images/christmas.jpg" alt="Christmas themed scene" />
 
-          <div class="event__caption">Halloween themed rides and fun activities!</div>
+          <div class="event__caption">Christmas themed rides and fun activities!</div>
         </li>
         <li class="event">
           <img
@@ -388,14 +384,13 @@
         <li class="event">
           <img
             class="event__image"
-            src="Images/sale-2.jpg"
+            src="Images/Sale.jpg"
             alt="A logo indicating a sale of 50 percent"
           />
           <div class="event__caption">Limited time sale! Tickets 50% off!</div>
         </li>
       </ul>
     </section>
-
     <!--This is the main section of the website-->
     <section class="content">
       <ul class="content__container">
@@ -403,10 +398,10 @@
           <img src="Images/FrontPageHotel.jpeg" alt="One of our hotels" class="content__img" />
           <div class="content__text">
             <h1 class="content__title">World Class Hotels!</h1>
-            <p class="content__caption">
+            <div class="content__caption">
               In addition to many fun and varied rides, we also offer competitive packages for
               world-class 5 and 4 star resorts and hotels!
-            </p>
+            </div>
             <a href="./Pages/accommodations.html" class="content__btn ">Read More!</a>
           </div>
         </li>
@@ -442,6 +437,35 @@
       </ul>
     </section>
 
+    <!-- This is the section where the user can buy tickets -->
+    <section class="tickets">
+      <form class="tickets__form">
+        <label for="tickets__days" class="tickets__label">
+          How many days are you visiting?<input
+            type="number"
+            name="tickets__days"
+            class="tickets__days"
+            id="tickets__days"
+            placeholder="Days: "
+        /></label>
+        <label for="tickets__num" class="tickets__label">
+          How many tickets are you purchasing?
+          <input
+            type="number"
+            name="tickets__num"
+            id="tickets__num"
+            class="tickets__num"
+            placeholder="# Tickets: "
+          />
+        </label>
+        <label for="tickets__when" class="tickets__label">
+          How many tickets are you purchasing?
+          <input type="date" name="tickets__when" id="tickets__when" class="tickets__when" />
+        </label>
+        <button class="tickets__purchase">Purchase your tickets</button>
+      </form>
+    </section>
+
     <!--Small section providing useful information about the website-->
     <aside class="info">
       <ul class="info__left">
@@ -466,9 +490,9 @@
       <div class="social">
         <h4>Follow us on social media!</h4>
         <div class="icon-container">
-          <img src="Images/facebook.png" alt="the facebook logo" class="footer__icon" />
-          <img src="Images/instagram.png" alt="the instagram logo" class="footer__icon" />
-          <img src="Images/twitter.png" alt="the twitter logo" class="footer__icon" />
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
         </div>
       </div>
       <small class="copyright">Copyright © Aurora Park. All Rights Reserved.</small>
