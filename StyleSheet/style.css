@@ -5,7 +5,8 @@
 	gray        : #444
 	light gray  : #d3d3d3
 	lighter gray: #f3f3f3
-	*/
+
+
 
 /*Custom Fonts-------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
@@ -19,13 +20,18 @@
 	padding   : 0;
 }
 
+
 /* Common CSS-------------------------------------*/
 body {
-	font-family   : "Abel", Arial, Helvetica, "Anton", sans-serif;
-	/* padding    : 30px;
-	background    : #d3d3d3; */
-	background    : #30336b;
-	border        : 30px #d3d3d3 solid;
+	font-family            : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding                : 30px;
+	/* background          : #d3d3d3; */
+	/* background          : #fff; */
+	border                 : 20px #fff solid;
+	/* background          : linear-gradient(to top, #fceabb, #f8b500); */
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 table {
@@ -48,76 +54,94 @@ table {
 	text-decoration: none;
 }
 
-/* Logo Bar -------------------------------- */
 
-.logo-bar {
-	/* padding-bottom: 0.5rem; */
-	background       : #30336b;
-	padding          : 0.5rem;
-	text-align       : center;
-	border-bottom    : 1px solid #99c1ec;
+/* Ferris Wheel Animation-------------------- */
+
+#layer2 {
+	animation       : rotate 6s infinite linear;
+	transform-origin: 50% 45%;
 }
 
-.main-logo__img {
-	height: 4rem;
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 /* Navbar -------------------------------------------*/
 
+
 .navbar {
-	background     : #30336b;
+	font-family: "Abel", Arial, Helvetica, "Anton", sans-serif;
+
+	background     : rgba(255, 255, 255, 0);
 	display        : flex;
-	justify-content: space-around;
-	justify-content: center;
+	justify-content: space-between;
+	align-items    : center;
+
+}
+
+.logo {
+	display  : block;
+	font-size: 2rem;
+	color    : #fff;
+	padding  : 1rem;
+}
+
+.navbar-btns {
+	display: flex;
 }
 
 .navbar__btn {
 	text-align: center;
-	padding   : 2rem;
-	flex-basis: 33.333%;
 	list-style: none;
+	margin    : 1rem;
+	padding   : 1rem;
+	border    : #ffffff00 0.8px solid;
+	display   : flex;
 }
 
-.home-btn {
-	border-right: 1px solid #99c1ec;
-	border-left : 1px solid #99c1ec;
+
+
+.navbar__btn--active {
+	background-color: #f7b731;
 }
 
-.ttd-btn {
-	border-right: 1px solid #99c1ec;
-	border-left : 1px solid #99c1ec;
-}
+.navbar__btn:hover {
+	border       : #f7b731 0.8px solid;
+	border-radius: 1rem;
 
-.acc-btn {
-	border-right: 1px solid #99c1ec;
-	border-left : 1px solid #99c1ec;
 }
 
 .navbar__btn--active,
 .navbar__btn:hover {
-	background-color: #1e185e;
+	border-radius: 1rem;
+
 }
 
 
 .navbar__icon {
 	height: 1.5rem;
 	width : auto;
-
 }
 
 .btn__text {
 	display  : inline;
 	font-size: 1.3rem;
-	color    : #99c1ec;
+	color    : #fff;
 }
 
 /* Banner -------------------------------------*/
 .banner__home {
 	position: relative;
 	height  : 90vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
-			rgba(0, 0, 0, 0.685)),
-		url("../Images/Banner.jpg");
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%),
+		url("../Images/banner-4.jpg");
 	background-size    : cover;
 	background-position: bottom;
 }
@@ -146,60 +170,87 @@ table {
 	position      : absolute;
 	width         : 50%;
 	bottom        : 0;
-	right         : 0;
-	text-align    : right;
+	left          : 0;
+	text-align    : left;
 	color         : #f4f4f4;
 	font-family   : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	padding-right : 20px;
+	padding-left  : 20px;
 	padding-bottom: 20px;
+}
+
+.banner__home .btn__call-to-action {
+	position     : absolute;
+	bottom       : 0;
+	right        : 0;
+	color        : #fff;
+	text-align   : center;
+	border       : #f74e00 1px solid;
+	padding      : 1rem;
+	font-size    : 1.5rem;
+	margin       : 1.2rem;
+	border-radius: 1rem;
+}
+
+.btn__call-to-action:hover {
+	background-color: #f74e00;
 }
 
 /* Events Section ---------------------------------*/
 
 
 .events__container {
-	display       : flex;
-	/* padding-top: 1rem; */
+	display        : flex;
+	margin         : 0 2rem
+		/* padding-top: 1rem; */
 }
 
 .event {
-	flex      : 1;
-	border    : solid #d3d3d3 10px;
-	list-style: none;
-	cursor    : pointer;
+	font-family  : 'Abel', Tahoma, Geneva, Verdana, sans-serif;
+	flex         : 1;
+	/* border    : solid #fff 10px; */
+	margin       : 10px;
+	list-style   : none;
+	cursor       : pointer;
 }
 
 
 .event__image {
-	width : 100%;
-	height: 300px;
+	width     : 100%;
+	height    : 300px;
+	transition: transform 0.2s ease-in-out;
+}
+
+.event__image:hover {
+	transform: scale(1.03);
+
 }
 
 .event__caption {
 	text-align: center;
-	font-size : 1.5rem;
-	background: #e67e22;
-	border    : 3px dotted #f4f4f4;
+	font-size : 1.4rem;
+	background: #f7b731;
+	border    : 3px dotted #fff;
 }
 
 /* Content Section ------------------- */
 
 .content {
-	padding: 5rem;
+	/* padding      : 0.8rem; */
+	/* margin       : 0rem 8rem; */
+	max-width       : 70%;
+	margin          : 0 auto;
 }
+
+/* .content__container {
+	background: #fff;
+} */
 
 .content__card {
-	display   : flex;
-	background: #d3d3d3;
-	border    : #444 10px solid;
-}
-
-.content__card:last-child {
-	border-bottom: #444 20px solid;
-}
-
-.content__card:first-child {
-	border-top: #444 20px solid;
+	display      : flex;
+	background   : #f7b731;
+	border       : #fed330 0.4rem solid;
+	border-radius: 1rem;
+	margin       : 1rem;
 }
 
 .content__img {
@@ -209,10 +260,15 @@ table {
 
 .content__text {
 	flex       : 1;
-	font-family: 'Raleway';
 	padding    : 1rem;
 	padding-top: 3rem;
 	text-align : center;
+}
+
+.content__caption {
+	padding      : 1rem;
+	background   : #fed330;
+	border-radius: 1rem;
 }
 
 .content__title {
@@ -221,10 +277,10 @@ table {
 
 .content__btn {
 	display      : inline-block;
-	background   : #1e185e;
+	background   : #fa8231;
 	border-radius: 5px;
 	border       : none;
-	padding      : 0.3rem;
+	padding      : 0.5rem;
 	margin-top   : 1rem;
 }
 
@@ -236,18 +292,58 @@ table {
 	text-decoration: none;
 }
 
+.tickets {
+	background   : #f7b731;
+	border-radius: 1rem;
+}
+
+.tickets__form {
+	background     : #fa8231;
+	display        : flex;
+	justify-content: center;
+	border-radius  : 1rem;
+
+}
+
+
+
+.tickets__label {
+	padding      : 1rem;
+	margin       : 1rem;
+	background   : #f7b731;
+	width        : 50%;
+	text-align   : center;
+	border-radius: 1rem;
+	flex         : 1;
+}
+
+.tickets__when {
+	text-align: center;
+}
+
+.tickets__purchase {
+	margin          : 1rem;
+	padding         : 1rem;
+	cursor          : pointer;
+	border          : none;
+	border-radius   : 10px;
+	align-self      : center;
+	background-color: #20bf35;
+	color           : #fff;
+	font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Info and Map -------------- */
 
 .info {
-	display      : flex;
-	height       : 500px;
-	border-top   : aquamarine 3px solid;
-	border-bottom: aquamarine 3px solid;
+	margin-top: 1rem;
+	display   : flex;
+	height    : 500px;
 }
 
 .info__left {
 	flex       : 1;
-	background : #30336b;
+	background : #f7b731;
 	padding-top: 170px;
 }
 
@@ -255,65 +351,73 @@ table {
 	list-style : none;
 	text-align : center;
 	line-height: 3rem;
-	color      : #f4f4f4;
-	;
 }
 
 .info__link {
 	text-decoration: none;
 	font-weight    : bold;
-	color          : aquamarine;
+	color          : #f74e00;
 }
 
 .info__right {
-	flex   : 1.4;
-	padding: 1rem;
+	flex: 1.4;
 }
 
 /* Footer */
 
 .footer {
-	color                : #f4f4f4;
-	/* display           : inline; */
-	/* justify-content   : space-between; */
-	/* disp */
+	background     : #1e272e;
+	color          : #fff;
+	display        : flex;
+	justify-content: space-between;
+	flex-basis     : 20%;
+	align-content  : center;
+	align-items    : center;
 }
 
 .social {
-	display    : inline-block;
-	text-align : left;
-	clear      : both;
-	margin-left: 5px;
+	display      : inline-block;
+	text-align   : left;
+	margin-left  : 1rem;
+	font-size    : 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.social i {
+	font-size  : 2rem;
+	cursor     : pointer;
+	padding-top: 0.7rem;
 }
 
 .copyright {
-	text-align : center;
-	text-align : right;
-	float      : right;
-	padding-top: 1.5rem;
+	text-align  : center;
+	text-align  : right;
+	margin-right: 1rem;
 }
 
 .icon-container {
 	display        : flex;
-	height         : 1.2rem;
+	height         : 2rem;
 	justify-content: space-around;
+	margin-bottom  : 0.6rem;
 
 }
 
-.footer__icon {
-	width : 20px;
-	cursor: pointer;
-}
 
 /* Input */
 .input {
-    text-align : center;
-    height : 2rem;
+	/* text-align   : center; */
+	padding         : 0.8rem;
+	max-width       : 150px;
+	height          : 1.2rem;
+	border          : none;
+	border-radius   : 5px;
+	margin-top      : 1rem;
 }
 
 /* Button */
 .button {
-    text-align : center;
-    width : 10rem;
-    height : 2rem;
+	text-align: center;
+	width     : 10rem;
+	height    : 2rem;
 }
