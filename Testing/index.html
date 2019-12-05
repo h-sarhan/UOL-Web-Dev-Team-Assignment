@@ -334,24 +334,30 @@
           <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
           <div class="navbar-btns">
             <a href="Pages/accommodations.html" class="btn navbar__btn acc-btn">
-              <img src="./Images/svg/single-bed.svg" alt="bed icon" class="navbar__icon" />
-              <h4 class="btn__text">Accommodations</h4>
+              <h4 class="btn__text">
+                <img src="./Images/svg/single-bed.svg" alt="bed icon" class="navbar__icon" />
+                Accommodations
+              </h4>
             </a>
 
             <a href="index.html" class="btn navbar__btn navbar__btn--active home-btn">
               <!--This links to the front page-->
-              <img src="./Images/svg/home.svg" alt="home icon" class="navbar__icon" />
-              <h4 class="btn__text">Home</h4>
+              <h4 class="btn__text">
+                <img src="./Images/svg/home.svg" alt="home icon" class="navbar__icon" />
+                Home
+              </h4>
             </a>
 
             <!--This links to the "Things to Do" page which has information about all the different activities in this park-->
             <a href="Pages/things_to_do.html" class="btn navbar__btn ttd-btn">
-              <img
-                src="./Images/svg/roller-coaster.svg"
-                alt="roller coaster icon"
-                class="navbar__icon"
-              />
-              <h4 class="btn__text">Things To Do</h4>
+              <h4 class="btn__text">
+                <img
+                  src="./Images/svg/roller-coaster.svg"
+                  alt="roller coaster icon"
+                  class="navbar__icon"
+                />
+                Things To Do
+              </h4>
             </a>
           </div>
         </nav>
@@ -362,21 +368,21 @@
             TripAdvisor&trade;
           </p>
         </div>
-        <a class="btn btn__call-to-action" href="#">Buy Tickets</a>
+        <a class="btn btn__call-to-action" href="#tickets">Buy Tickets</a>
       </div>
     </header>
     <!--A section containing 3 different events currently happening at CoolPark-->
     <section class="events">
       <ul class="events__container">
         <li class="event">
-          <img class="event__image" src="Images/christmas.jpg" alt="Christmas themed scene" />
+          <img class="event__image" src="Images/christmas2.jpg" alt="Christmas themed scene" />
 
           <div class="event__caption">Christmas themed rides and fun activities!</div>
         </li>
         <li class="event">
           <img
             class="event__image"
-            src="Images/WaterPark.jpg"
+            src="Images/WaterPark2.jpg"
             alt="A group of adults in the middle of a water slide"
           />
           <div class="event__caption">Experience our brand new water park!</div>
@@ -438,13 +444,13 @@
     </section>
 
     <!-- This is the section where the user can buy tickets -->
-    <section class="tickets">
+    <section class="tickets" id="tickets">
       <form class="tickets__form">
         <label for="tickets__days" class="tickets__label">
           How many days are you visiting?<input
             type="number"
             name="tickets__days"
-            class="tickets__days"
+            class="tickets__days input"
             id="tickets__days"
             placeholder="Days: "
         /></label>
@@ -454,15 +460,21 @@
             type="number"
             name="tickets__num"
             id="tickets__num"
-            class="tickets__num"
+            class="tickets__num input"
             placeholder="# Tickets: "
           />
         </label>
         <label for="tickets__when" class="tickets__label">
-          Choose a date
-          <input type="date" name="tickets__when" id="tickets__when" class="tickets__when" />
+          Choose a date:<br />
+          <input
+            type="text"
+            name="tickets__when"
+            id="tickets__when"
+            class="tickets__when input"
+            placeholder="dd/mm/yyyy"
+          />
         </label>
-        <button class="tickets__purchase">Purchase your tickets</button>
+        <button class="tickets__purchase">Purchase</button>
       </form>
     </section>
 
