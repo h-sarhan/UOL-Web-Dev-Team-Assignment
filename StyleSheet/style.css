@@ -1,11 +1,11 @@
 /* Important colors:
-	primary     : #30336b
-	secondary   : #99c1ec
-	carrot      : #e67e22
-	gray        : #444
-	light gray  : #d3d3d3
-	lighter gray: #f3f3f3
-
+  primary             : #f7b731
+  secondary           : #fa8231
+  call to action color: #f74e00
+  gray                : #444
+  light gray          : #d3d3d3
+  lighter gray        : #f3f3f3
+*/
 
 
 /*Custom Fonts-------------------------------------*/
@@ -15,409 +15,405 @@
 
 /* CSS reset--------------------------- */
 * {
-	box-sizing: border-box;
-	margin    : 0;
-	padding   : 0;
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
 }
 
 
 /* Common CSS-------------------------------------*/
 body {
-	font-family            : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	padding                : 30px;
-	/* background          : #d3d3d3; */
-	/* background          : #fff; */
-	border                 : 20px #fff solid;
-	/* background          : linear-gradient(to top, #fceabb, #f8b500); */
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding    : 30px;
+  border     : 20px #fff solid;
+
 
 }
 
 table {
-	border: 3px solid black;
+  border: 3px solid black;
 }
 
 /* Utility Classes */
 
 .l-heading {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 .lead {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .btn:link,
 .btn:visited {
-	color          : #444;
-	text-decoration: none;
+  color          : #444;
+  text-decoration: none;
 }
 
 
 /* Ferris Wheel Animation-------------------- */
 
 #layer2 {
-	animation       : rotate 6s infinite linear;
-	transform-origin: 50% 45%;
+  animation       : rotate 6s infinite linear;
+  transform-origin: 50% 45%;
 }
 
 
 @keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
 
-	100% {
-		transform: rotate(360deg);
-	}
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Navbar -------------------------------------------*/
 
-
 .navbar {
-	font-family: "Abel", Arial, Helvetica, "Anton", sans-serif;
+  font-family: "Abel", Arial, Helvetica, "Anton", sans-serif;
 
-	background     : rgba(255, 255, 255, 0);
-	display        : flex;
-	justify-content: space-between;
-	align-items    : center;
+  background     : rgba(255, 255, 255, 0);
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
 
 }
 
 .logo {
-	display  : block;
-	font-size: 2rem;
-	color    : #fff;
-	padding  : 1rem;
+  display  : block;
+  font-size: 2rem;
+  color    : #fff;
+  padding  : 1rem;
 }
 
 .navbar-btns {
-	display: flex;
+  display: flex;
 }
 
 .navbar__btn {
-	text-align: center;
-	list-style: none;
-	margin    : 1rem;
-	padding   : 1rem;
-	border    : #ffffff00 0.8px solid;
-	display   : flex;
+  text-align: center;
+  list-style: none;
+  margin    : 1rem;
+  padding   : 1rem;
+  border    : #ffffff00 0.8px solid;
+  display   : flex;
 }
 
 
 
 .navbar__btn--active {
-	background-color: #f7b731;
+  background-color: #f7b731;
 }
 
 .navbar__btn:hover {
-	border       : #f7b731 0.8px solid;
-	border-radius: 1rem;
+  border       : #f7b731 0.8px solid;
+  border-radius: 1rem;
 
 }
 
 .navbar__btn--active,
 .navbar__btn:hover {
-	border-radius: 1rem;
+  border-radius: 2rem;
 
 }
 
 
 .navbar__icon {
-	height: 1.5rem;
-	width : auto;
+  height: 1.5rem;
+  width : auto;
 }
 
 .btn__text {
-	display  : inline;
-	font-size: 1.3rem;
-	color    : #fff;
+  display  : inline;
+  font-size: 1.3rem;
+  color    : #fff;
 }
 
-/* Banner -------------------------------------*/
+/* Banners -------------------------------------*/
 .banner__home {
-	position: relative;
-	height  : 90vh;
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%),
-		url("../Images/banner-4.jpg");
-	background-size    : cover;
-	background-position: bottom;
+  position: relative;
+  height  : 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%),
+    url("../Images/banner-4.jpg");
+  background-size    : cover;
+  background-position: bottom;
 }
 
 .banner__ttd {
-	position: relative;
-	height  : 90vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
-			rgba(0, 0, 0, 0.685)),
-		url("../Images/GameOfWar.jpg");
-	background-size    : cover;
-	background-position: bottom;
+  position: relative;
+  height  : 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%),
+    url("../Images/ttd-banner.jpg");
+  background-size    : cover;
+  background-position: bottom;
 }
 
 .banner__acc {
-	position: relative;
-	height  : 90vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.144),
-			rgba(0, 0, 0, 0.685)),
-		url("../Images/CoolParkThemeResort.jpg");
-	background-size    : cover;
-	background-position: bottom;
+  position: relative;
+  height  : 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.144),
+      rgba(0, 0, 0, 0.685)),
+    url("../Images/hotel-banner.jpg");
+  background-size    : cover;
+  background-position: bottom;
 }
 
 .banner__content {
-	position      : absolute;
-	width         : 50%;
-	bottom        : 0;
-	left          : 0;
-	text-align    : left;
-	color         : #f4f4f4;
-	font-family   : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	padding-left  : 20px;
-	padding-bottom: 20px;
+  position      : absolute;
+  width         : 60%;
+  bottom        : 0;
+  left          : 0;
+  text-align    : left;
+  color         : #f4f4f4;
+  font-family   : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left  : 20px;
+  padding-bottom: 20px;
 }
 
 .banner__home .btn__call-to-action {
-	position     : absolute;
-	bottom       : 0;
-	right        : 0;
-	color        : #fff;
-	text-align   : center;
-	border       : #f74e00 1px solid;
-	padding      : 1rem;
-	font-size    : 1.5rem;
-	margin       : 1.2rem;
-	border-radius: 1rem;
+  position        : absolute;
+  bottom          : 0;
+  right           : 0;
+  color           : #fff;
+  text-align      : center;
+  padding         : 1rem;
+  font-size       : 1.5rem;
+  margin          : 1.2rem;
+  border-radius   : 1rem;
+  background-color: #f74e00;
 }
 
-.btn__call-to-action:hover {
-	background-color: #f74e00;
-}
+
 
 /* Events Section ---------------------------------*/
 
 
 .events__container {
-	display        : flex;
-	margin         : 0 2rem
-		/* padding-top: 1rem; */
+  display  : flex;
+  transform: scale(0.95);
 }
 
 .event {
-	font-family  : 'Abel', Tahoma, Geneva, Verdana, sans-serif;
-	flex         : 1;
-	/* border    : solid #fff 10px; */
-	margin       : 10px;
-	list-style   : none;
-	cursor       : pointer;
+  font-family: 'Abel', Tahoma, Geneva, Verdana, sans-serif;
+  flex       : 1;
+  margin     : 10px;
+  list-style : none;
+  cursor     : pointer;
 }
 
 
 .event__image {
-	width     : 100%;
-	height    : 300px;
-	transition: transform 0.2s ease-in-out;
+  width     : 100%;
+  height    : 300px;
+  transition: transform 0.2s ease-in-out;
 }
 
+/* This is the animation that occurs when you hover over an event */
 .event__image:hover {
-	transform: scale(1.03);
+  transform: scale(1.03);
 
 }
 
 .event__caption {
-	text-align: center;
-	font-size : 1.4rem;
-	background: #f7b731;
-	border    : 3px dotted #fff;
+  text-align: center;
+  font-size : 1.4rem;
+  background: #f7b731;
+  border    : 3px dotted #fff;
 }
 
-/* Content Section ------------------- */
+/* Content/Cards Section ------------------- */
 
-.content {
-	/* padding      : 0.8rem; */
-	/* margin       : 0rem 8rem; */
-	max-width       : 70%;
-	margin          : 0 auto;
+.content__container {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-evenly;
+  align-items    : stretch;
 }
-
-/* .content__container {
-	background: #fff;
-} */
 
 .content__card {
-	display      : flex;
-	background   : #f7b731;
-	border       : #fed330 0.4rem solid;
-	border-radius: 1rem;
-	margin       : 1rem;
+  display       : flex;
+  background    : #f7b731;
+  border-radius : 1rem;
+  margin        : 1rem;
+  flex-basis    : 35%;
+  box-shadow    : 5px 5px 25px 5px #E5D5BC;
+  flex-direction: column;
+  align-items   : stretch;
 }
 
 .content__img {
-	max-width: 400px;
-	flex     : 1;
+  width        : 100%;
+  flex         : 1;
+  border-radius: 20px;
+  transform    : scale(0.85);
 }
+
 
 .content__text {
-	flex       : 1;
-	padding    : 1rem;
-	padding-top: 3rem;
-	text-align : center;
-}
-
-.content__caption {
-	padding      : 1rem;
-	background   : #fed330;
-	border-radius: 1rem;
+  padding    : 0.5rem;
+  padding-top: 1rem;
+  font-family: 'Abel';
+  text-align : center;
+  border-top : #1e272e5b solid 1px;
 }
 
 .content__title {
-	padding: 1rem;
+  padding  : 1rem;
+  font-size: 1.9rem;
 }
 
+.content__caption {
+  padding      : 1rem;
+  border-radius: 1rem;
+  font-size    : 1.2rem;
+}
+
+
 .content__btn {
-	display      : inline-block;
-	background   : #fa8231;
-	border-radius: 5px;
-	border       : none;
-	padding      : 0.5rem;
-	margin-top   : 1rem;
+  display      : inline-block;
+  background   : #fa8231;
+  border-radius: 5px;
+  border       : none;
+  padding      : 1rem;
+  margin       : 1rem;
+  font-size    : 1.5rem;
 }
 
 .content__btn:link,
 .content__btn:hover,
 .content__btn:visited {
-	cursor         : pointer;
-	color          : #f4f4f4;
-	text-decoration: none;
+  cursor         : pointer;
+  color          : #f4f4f4;
+  text-decoration: none;
 }
 
+/* Ticket Purchase Bar ---------------- */
+
 .tickets {
-	background   : #f7b731;
-	border-radius: 1rem;
+  background   : #f7b731;
+  border-radius: 1rem;
 }
 
 .tickets__form {
-	background     : #fa8231;
-	display        : flex;
-	justify-content: center;
-	border-radius  : 1rem;
+  background     : #fa8231;
+  display        : flex;
+  justify-content: center;
+  border-radius  : 1rem;
 
 }
 
-
-
 .tickets__label {
-	padding      : 1rem;
-	margin       : 1rem;
-	background   : #f7b731;
-	width        : 50%;
-	text-align   : center;
-	border-radius: 1rem;
-	flex         : 1;
+  padding      : 1rem;
+  margin       : 1rem;
+  background   : #f7b731;
+  width        : 50%;
+  text-align   : center;
+  border-radius: 1rem;
+  flex         : 1;
 }
 
 .tickets__when {
-	text-align: center;
+  text-align: center;
 }
 
 .tickets__purchase {
-	margin          : 1rem;
-	padding         : 1rem;
-	cursor          : pointer;
-	border          : none;
-	border-radius   : 10px;
-	align-self      : center;
-	background-color: #20bf35;
-	color           : #fff;
-	font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin          : 1rem;
+  padding         : 1rem;
+  cursor          : pointer;
+  border          : none;
+  border-radius   : 10px;
+  align-self      : center;
+  background-color: #20bf35;
+  color           : #fff;
+  font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Info and Map -------------- */
 
 .info {
-	margin-top: 1rem;
-	display   : flex;
-	height    : 500px;
+  margin-top: 1rem;
+  display   : flex;
+  height    : 500px;
 }
 
 .info__left {
-	flex       : 1;
-	background : #f7b731;
-	padding-top: 170px;
+  flex       : 1;
+  background : #f7b731;
+  padding-top: 170px;
 }
 
 .info__item {
-	list-style : none;
-	text-align : center;
-	line-height: 3rem;
+  list-style : none;
+  text-align : center;
+  line-height: 3rem;
 }
 
 .info__link {
-	text-decoration: none;
-	font-weight    : bold;
-	color          : #f74e00;
+  text-decoration: none;
+  font-weight    : bold;
+  color          : #f74e00;
 }
 
 .info__right {
-	flex: 1.4;
+  flex: 1.4;
 }
 
 /* Footer */
 
 .footer {
-	background     : #1e272e;
-	color          : #fff;
-	display        : flex;
-	justify-content: space-between;
-	flex-basis     : 20%;
-	align-content  : center;
-	align-items    : center;
+  background     : #1e272e;
+  color          : #fff;
+  display        : flex;
+  justify-content: space-between;
+  flex-basis     : 20%;
+  align-content  : center;
+  align-items    : center;
 }
 
 .social {
-	display      : inline-block;
-	text-align   : left;
-	margin-left  : 1rem;
-	font-size    : 1.2rem;
-	margin-bottom: 1rem;
+  display      : inline-block;
+  text-align   : left;
+  margin-left  : 1rem;
+  font-size    : 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .social i {
-	font-size  : 2rem;
-	cursor     : pointer;
-	padding-top: 0.7rem;
+  font-size  : 2rem;
+  cursor     : pointer;
+  padding-top: 0.7rem;
 }
 
 .copyright {
-	text-align  : center;
-	text-align  : right;
-	margin-right: 1rem;
+  text-align  : center;
+  text-align  : right;
+  margin-right: 1rem;
 }
 
 .icon-container {
-	display        : flex;
-	height         : 2rem;
-	justify-content: space-around;
-	margin-bottom  : 0.6rem;
+  display        : flex;
+  height         : 2rem;
+  justify-content: space-around;
+  margin-bottom  : 0.6rem;
 
 }
 
 
-/* Input */
+/* Input forms ------------------*/
 .input {
-	/* text-align   : center; */
-	padding         : 0.8rem;
-	max-width       : 150px;
-	height          : 1.2rem;
-	border          : none;
-	border-radius   : 5px;
-	margin-top      : 1rem;
+  padding      : 0.8rem;
+  max-width    : 150px;
+  height       : 1.2rem;
+  border       : none;
+  border-radius: 5px;
+  margin-top   : 1rem;
 }
 
-/* Button */
+/* Button ------------------------*/
 .button {
-	text-align: center;
-	width     : 10rem;
-	height    : 2rem;
+  text-align: center;
+  width     : 10rem;
+  height    : 2rem;
 }

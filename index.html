@@ -3,11 +3,11 @@
 
   <head>
     <meta charset="utf-8" />
-    <!--Makes the website responsive-->
+    <!--Makes the website more responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" type="text/css" href="StyleSheet/alt-style.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
 
     <!-- ICON LIBRARY -->
     <script src="https://kit.fontawesome.com/734e2b76ce.js" crossorigin="anonymous"></script>
@@ -15,18 +15,23 @@
   </head>
 
   <body>
+    <!-- This header includes everything that you see when you first load the site (Navbar, logo and banner) -->
     <header>
       <!--The banner image for our main page -->
       <div class="banner__home">
         <nav class="navbar">
           <!--The logo for our website-->
           <span class="logo">
+            <!-- We initially added a span tag and a class for each letter in the logo to be able to style them differently,
+                 however the result did not look good. We kept the span tags because we liked the default spacing between the letters that the spans provide -->
             <span class="logo--a">A</span>
             <span class="logo--u">u</span>
             <span class="logo--r">r</span>
             <span class="logo--o">o</span>
             <span class="logo--r">r</span>
             <span class="logo--a">a</span>
+            <!-- This is the ferris wheel svg. We included the entire file to be able to animate a specific part of it.
+                 It makes the html kind of a mess but the animated ferris wheel looks quite nice-->
             <span class="logo--icon">
               <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
@@ -167,8 +172,10 @@
             <span class="logo--r">r</span>
             <span class="logo--k">k</span>
           </span>
-          <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
+
+          <!-- This div represents the top row of buttons to the right of the logo -->
           <div class="navbar-btns">
+            <!--This button links to our accomodations page, which has information about the different hotels available near the theme park-->
             <a href="Pages/accommodations.html" class="btn navbar__btn">
               <h4 class="btn__text">
                 <img src="./Images/svg/single-bed.svg" alt="bed icon" class="navbar__icon" />
@@ -176,15 +183,15 @@
               </h4>
             </a>
 
+            <!--This button links to the front page -->
             <a href="index.html" class="btn navbar__btn navbar__btn--active">
-              <!--This links to the front page-->
               <h4 class="btn__text">
                 <img src="./Images/svg/home.svg" alt="home icon" class="navbar__icon" />
                 Home
               </h4>
             </a>
 
-            <!--This links to the "Things to Do" page which has information about all the different activities in this park-->
+            <!--This button links to the "Things to Do" page which has information about all the different activities in this park-->
             <a href="Pages/things_to_do.html" class="btn navbar__btn">
               <h4 class="btn__text">
                 <img src="./Images/svg/roller-coaster.svg" alt="roller coaster icon" class="navbar__icon" />
@@ -193,6 +200,7 @@
             </a>
           </div>
         </nav>
+        <!-- This div represents the the text content and the "Buy Tickets" button inside the banner -->
         <div class="banner__content">
           <h1 class="l-heading">Rediscover Fun</h1>
           <p class="lead">
@@ -203,39 +211,48 @@
         <a class="btn btn__call-to-action" href="#tickets">Buy Tickets</a>
       </div>
     </header>
-    <!--A section containing 3 different events currently happening at CoolPark-->
+
+    <!--A section containing 3 different events currently happening at Aurora Park-->
     <section class="events">
+      <!-- This is an unordered list containing all the events -->
       <ul class="events__container">
+        <!-- This is the christmas event -->
         <li class="event">
           <img class="event__image" src="Images/christmas2.jpg" alt="Christmas themed scene" />
 
           <div class="event__caption">Christmas themed rides and fun activities!</div>
         </li>
+        <!-- This is the opening of the water park event -->
         <li class="event">
           <img class="event__image" src="Images/WaterPark2.jpg"
             alt="A group of adults in the middle of a water slide" />
           <div class="event__caption">Experience our brand new water park!</div>
         </li>
+        <!-- This is the 50% off ticket sale event -->
         <li class="event">
           <img class="event__image" src="Images/Sale.jpg" alt="A logo indicating a sale of 50 percent" />
           <div class="event__caption">Limited time sale! Tickets 50% off!</div>
         </li>
       </ul>
     </section>
-    <!--This is the main section of the website-->
+
+    <!--This is the main section of the website we called it "content" but a more appropriate name would be "cards"-->
     <section class="content">
+      <!-- This is the container of all the cards -->
       <ul class="content__container">
+        <!-- This is an individual card highlighting Aurora Park's hotels and resorts -->
         <li class="content__card">
           <img src="Images/FrontPageHotel.jpeg" alt="One of our hotels" class="content__img" />
           <div class="content__text">
             <h1 class="content__title">World Class Hotels!</h1>
             <div class="content__caption">
-              In addition to many fun and varied rides, we also offer competitive packages for
+              We also offer competitive packages for
               world-class 5 and 4 star resorts and hotels!
             </div>
             <a href="./Pages/accommodations.html" class="content__btn ">Read More!</a>
           </div>
         </li>
+        <!-- This is an individual card highlighting Aurora Park's shows and parades -->
         <li class="content__card">
           <img src="Images/Show.jpg" alt="One of our many shows" class="content__img" />
           <div class="content__text">
@@ -247,6 +264,7 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
+        <!-- This is an individual card highlighting Aurora Park's longest rollercoaster in California -->
         <li class="content__card">
           <img src="Images/RollerCoaster.jpg" alt="A roller coaster" class="content__img" />
           <div class="content__text">
@@ -257,6 +275,7 @@
             <a href="./Pages/things_to_do.html" class="content__btn ">Read More!</a>
           </div>
         </li>
+        <!-- This is an individual card highlighting Aurora Park's high rating on TripAdvisor -->
         <li class="content__card">
           <img src="Images/TripAdvisor-600x450.png" alt="TripAdvisor logo" class="content__img" id="tripadvisor-logo" />
           <div class="content__text">
@@ -273,7 +292,6 @@
       <form class="tickets__form">
         <label for="tickets__days" class="tickets__label">
           How many days are you visiting?
-
           <input type="number" placeholder="# Days: " name="tickets__days" class="tickets__days input"
             id="tickets__days" list="tickmarks-1" />
           </div>
@@ -293,8 +311,9 @@
       </form>
     </section>
 
-    <!--Small section providing useful information about the website-->
+    <!--This section is divided into two parts one containing useful information about the park, and one containing an interactive map -->
     <aside class="info">
+      <!-- This section contains useful information about the theme park such as location and opening times -->
       <ul class="info__left">
         <li class="info__item"><strong>Location</strong>: Santa Monica, California</li>
         <li class="info__item"><strong>Opening Times</strong>: 9:00 AM to 7:00 PM All Week Long</li>
@@ -303,13 +322,17 @@
           your car
         </li>
       </ul>
+
+      <!-- This is an interactive map powered by Google Maps API. We did not use any JavaScript for this -->
       <iframe class="info__right" frameborder="0" style="border:0"
         src="https://www.google.com/maps/embed/v1/view?zoom=17&center=34.0086%2C-118.4981&key=AIzaSyDAo2ikaJi3xZXaEwcga_jQX4ELRtqZFm8"
         allowfullscreen>
       </iframe>
     </aside>
+
+    <!--Our footer includes our social media presence along with some fine print-->
     <footer class=" footer">
-      <!--Our footer includes our social media presence some fine print-->
+      <!-- This div contains the social media icons. We used an external icon library to get icons with similar styling -->
       <div class="social">
         <h4>Follow us on social media!</h4>
         <div class="icon-container">
@@ -318,6 +341,7 @@
           <i class="fab fa-twitter-square"></i>
         </div>
       </div>
+      <!-- This is just some fine print -->
       <small class="copyright">Copyright © Aurora Park. All Rights Reserved.</small>
     </footer>
   </body>
