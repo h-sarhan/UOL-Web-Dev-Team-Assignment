@@ -1,11 +1,11 @@
 /* Important colors:
-  primary     : #30336b
-  secondary   : #99c1ec
-  carrot      : #e67e22
-  gray        : #444
-  light gray  : #d3d3d3
-  lighter gray: #f3f3f3
-
+  primary             : #f7b731
+  secondary           : #fa8231
+  call to action color: #f74e00
+  gray                : #444
+  light gray          : #d3d3d3
+  lighter gray        : #f3f3f3
+*/
 
 
 /*Custom Fonts-------------------------------------*/
@@ -131,7 +131,7 @@ table {
   color    : #fff;
 }
 
-/* Banner -------------------------------------*/
+/* Banners -------------------------------------*/
 .banner__home {
   position: relative;
   height  : 90vh;
@@ -145,7 +145,7 @@ table {
   position: relative;
   height  : 90vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%),
-    url("../Images/GameOfWar.jpg");
+    url("../Images/ttd-banner.jpg");
   background-size    : cover;
   background-position: bottom;
 }
@@ -155,14 +155,14 @@ table {
   height  : 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.144),
       rgba(0, 0, 0, 0.685)),
-    url("../Images/CoolParkThemeResort.jpg");
+    url("../Images/hotel-banner.jpg");
   background-size    : cover;
   background-position: bottom;
 }
 
 .banner__content {
   position      : absolute;
-  width         : 50%;
+  width         : 60%;
   bottom        : 0;
   left          : 0;
   text-align    : left;
