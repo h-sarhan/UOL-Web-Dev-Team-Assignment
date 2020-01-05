@@ -26,13 +26,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding    : 30px;
   border     : 20px #fff solid;
-
-
 }
 
 table {
   border: 3px solid black;
 }
+
 
 /* Utility Classes */
 
@@ -113,7 +112,12 @@ table {
   display   : flex;
 }
 
-
+.navbar a {
+  text-decoration: none;
+}
+.navbar span {
+  letter-spacing: 0.3em;
+}
 
 .navbar__btn--active {
   background-color: #f7b731;
