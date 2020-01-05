@@ -116,7 +116,7 @@ table {
   text-decoration: none;
 }
 .navbar span {
-  letter-spacing: 1em;
+  letter-spacing: 0.3em;
 }
 
 .navbar__btn--active {
