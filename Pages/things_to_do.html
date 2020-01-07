@@ -5,12 +5,11 @@
     <meta charset="utf-8" />
     <!--Makes the website responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!--Tile, Description, Keywords-->
     <title>Things to Do | Aurora Park</title>
-    <meta name="description" content="Experience a range of activities inluding exotic rides, events and shows and more at Aurora Park, one of the world class resorts in California.">
+    <meta name="description"
+      content="Experience a range of activities inluding exotic rides, events and shows and more at Aurora Park, one of the world class resorts in California.">
     <meta name="keywords" content="Aurora Park, Theme Park, Activities, Shows, Events">
-
 
     <!-- CSS FILE -->
     <link rel="stylesheet" type="text/css" href="/StyleSheet/style.css" />
@@ -29,7 +28,7 @@
             <!--The logo for our website-->
             <span class="logo">
               <!-- We initially added a span tag and a class for each letter in the logo to be able to style them differently,
-                  however the result did not look good. So we removed them -->
+                 however the result did not look good. So we removed them -->
               Aurora
               <!-- This is the ferris wheel svg. We included the entire file to be able to animate a specific part of it.
                   It makes the html kind of a mess but the animated ferris wheel looks quite nice-->
@@ -42,15 +41,15 @@
                   sodipodi:docname="proper-ferris-wheel-v0.3.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
                   <defs id="defs2" />
                   <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
-                    inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.98994949" inkscape:cx="-119.04491"
-                    inkscape:cy="331.49661" inkscape:document-units="mm" inkscape:current-layer="layer2" showgrid="false"
-                    inkscape:snap-center="true" inkscape:snap-object-midpoints="true" inkscape:snap-page="true"
-                    inkscape:snap-midpoints="true" inkscape:snap-smooth-nodes="true"
-                    inkscape:snap-intersection-paths="true" inkscape:object-nodes="false" inkscape:object-paths="true"
-                    inkscape:snap-bbox="true" inkscape:bbox-paths="true" inkscape:bbox-nodes="true"
-                    inkscape:snap-bbox-edge-midpoints="true" inkscape:snap-bbox-midpoints="true"
-                    inkscape:window-width="3200" inkscape:window-height="1659" inkscape:window-x="-14"
-                    inkscape:window-y="-14" inkscape:window-maximized="1" />
+                    inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.98994949"
+                    inkscape:cx="-119.04491" inkscape:cy="331.49661" inkscape:document-units="mm"
+                    inkscape:current-layer="layer2" showgrid="false" inkscape:snap-center="true"
+                    inkscape:snap-object-midpoints="true" inkscape:snap-page="true" inkscape:snap-midpoints="true"
+                    inkscape:snap-smooth-nodes="true" inkscape:snap-intersection-paths="true"
+                    inkscape:object-nodes="false" inkscape:object-paths="true" inkscape:snap-bbox="true"
+                    inkscape:bbox-paths="true" inkscape:bbox-nodes="true" inkscape:snap-bbox-edge-midpoints="true"
+                    inkscape:snap-bbox-midpoints="true" inkscape:window-width="3200" inkscape:window-height="1659"
+                    inkscape:window-x="-14" inkscape:window-y="-14" inkscape:window-maximized="1" />
                   <metadata id="metadata5">
                     <rdf:RDF>
                       <cc:Work rdf:about="">
@@ -171,16 +170,16 @@
               Park
             </span>
           </a>
-          <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
+          <!-- This div represents the top row of buttons to the right of the logo -->
           <div class="navbar-btns">
-            <!--This links to the front page-->
+            <!--This button links to the front page -->
             <a href="/index.html" class="btn navbar__btn navbar__btn">
               <h4 class="btn__text">
                 <img src="../Images/svg/home.svg" alt="home icon" class="navbar__icon" />
                 Home
               </h4>
             </a>
-
+            <!-- This button links to our accomodations page, which has information about the different hotels available near the theme park-->
             <a href="/Pages/accommodations.html" class="btn navbar__btn">
               <h4 class="btn__text">
                 <img src="../Images/svg/single-bed.svg" alt="bed icon" class="navbar__icon" />
@@ -197,6 +196,7 @@
             </a>
           </div>
         </nav>
+        <!-- This div is for the banner content, which is just some text in this case-->
         <div class="banner__content">
           <h1 class="l-heading">Explore a World of Fun</h1>
           <p class="lead">
@@ -206,9 +206,11 @@
       </div>
     </header>
 
-    <!--This is the main section of the website-->
+    <!--This is the main section of the website with all the cards -->
     <section class="content">
       <ul class="content__container">
+
+        <!-- Card for Game Of War-->
         <li class="content__card">
           <img src="/Images/GameOfWar.jpg" alt="game of war" class="content__img">
           <div class="content__text">
@@ -218,6 +220,8 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
+
+        <!-- Card for SpaceWar-->
         <li class="content__card">
           <img src="/Images/SpaceWar.jpg" alt="space war" class="content__img">
           <div class="content__text">
@@ -227,12 +231,8 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
-      </ul>
-    </section>
 
-    <!--This is the main section of the website-->
-    <section class="content">
-      <ul class="content__container">
+        <!-- Content card for Parades-->
         <li class="content__card">
           <img src="/Images/Parade.jpg" alt="parade" class="content__img">
           <div class="content__text">
@@ -241,6 +241,8 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
+
+        <!-- Content card for Fireworks-->
         <li class="content__card">
           <img src="/Images/Fireworks.jpg" alt="fire works" class="content__img">
           <div class="content__text">
@@ -249,12 +251,14 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
+
       </ul>
     </section>
 
     <footer class=" footer">
       <!--Our footer includes our social media presence some fine print-->
       <div class="social">
+        <!-- This div contains the social media icons. We used an external icon library to get icons with similar styling -->
         <h4>Follow us on social media!</h4>
         <div class="icon-container">
           <i class="fab fa-facebook"></i>
@@ -262,6 +266,7 @@
           <i class="fab fa-twitter-square"></i>
         </div>
       </div>
+      <!-- This is just some fine print -->
       <small class="copyright">Copyright © Aurora Park. All Rights Reserved.</small>
     </footer>
   </body>
