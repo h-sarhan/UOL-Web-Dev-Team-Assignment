@@ -16,9 +16,11 @@
 
     <!-- ICON LIBRARY -->
     <script src="https://kit.fontawesome.com/734e2b76ce.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
+    <!-- This header includes everything that you see when you first load the site (Navbar, logo and banner) -->
     <header>
       <!--The banner image for our main page -->
       <div class="banner__acc">
@@ -28,11 +30,10 @@
             <!--The logo for our website-->
             <span class="logo">
               <!-- We initially added a span tag and a class for each letter in the logo to be able to style them differently,
-                  however the result did not look good. So we removed them -->
+                 however the result did not look good. So we removed them -->
               Aurora
-              <!-- This is the ferris wheel svg. We included the entire file to be able to animate a specific part of it.
-                  It makes the html kind of a mess but the animated ferris wheel looks quite nice-->
               <span class="logo--icon">
+                <!-- This is the ferris wheel svg. We included the entire file to be able to animate a specific part of it. -->
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
                   xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -41,15 +42,15 @@
                   sodipodi:docname="proper-ferris-wheel-v0.3.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
                   <defs id="defs2" />
                   <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
-                    inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.98994949" inkscape:cx="-119.04491"
-                    inkscape:cy="331.49661" inkscape:document-units="mm" inkscape:current-layer="layer2" showgrid="false"
-                    inkscape:snap-center="true" inkscape:snap-object-midpoints="true" inkscape:snap-page="true"
-                    inkscape:snap-midpoints="true" inkscape:snap-smooth-nodes="true"
-                    inkscape:snap-intersection-paths="true" inkscape:object-nodes="false" inkscape:object-paths="true"
-                    inkscape:snap-bbox="true" inkscape:bbox-paths="true" inkscape:bbox-nodes="true"
-                    inkscape:snap-bbox-edge-midpoints="true" inkscape:snap-bbox-midpoints="true"
-                    inkscape:window-width="3200" inkscape:window-height="1659" inkscape:window-x="-14"
-                    inkscape:window-y="-14" inkscape:window-maximized="1" />
+                    inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.98994949"
+                    inkscape:cx="-119.04491" inkscape:cy="331.49661" inkscape:document-units="mm"
+                    inkscape:current-layer="layer2" showgrid="false" inkscape:snap-center="true"
+                    inkscape:snap-object-midpoints="true" inkscape:snap-page="true" inkscape:snap-midpoints="true"
+                    inkscape:snap-smooth-nodes="true" inkscape:snap-intersection-paths="true"
+                    inkscape:object-nodes="false" inkscape:object-paths="true" inkscape:snap-bbox="true"
+                    inkscape:bbox-paths="true" inkscape:bbox-nodes="true" inkscape:snap-bbox-edge-midpoints="true"
+                    inkscape:snap-bbox-midpoints="true" inkscape:window-width="3200" inkscape:window-height="1659"
+                    inkscape:window-x="-14" inkscape:window-y="-14" inkscape:window-maximized="1" />
                   <metadata id="metadata5">
                     <rdf:RDF>
                       <cc:Work rdf:about="">
@@ -126,6 +127,7 @@
                           id="rect838-6-0-4-4" width="1.1819873e-07" height="52.922035" x="-45.383644" y="208.40231"
                           inkscape:transform-center-y="5.0826067" inkscape:transform-center-x="-5.0825246"
                           transform="rotate(-45)" />
+
                         <ellipse
                           style="opacity:1;fill:none;stroke:#fff;stroke-width:8.3043375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                           id="path1099" cx="-32.135021" cy="-194.22763" rx="14.201508" ry="14.297434"
@@ -158,6 +160,7 @@
                           style="opacity:1;fill:none;stroke:#fff;stroke-width:8.3043375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                           id="path1099-1" cx="-12.41386" cy="-251.86873" rx="14.201509" ry="14.297434"
                           transform="rotate(135)" />
+
                       </g>
                       <ellipse
                         style="opacity:1;fill:none;stroke:#fff;stroke-width:7.69500017;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -170,7 +173,7 @@
               Park
             </span>
           </a>
-          <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
+          <!-- This div represents the top row of buttons to the right of the logo -->
           <div class="navbar-btns">
             <!--This links to the front page-->
             <a href="/index.html" class="btn navbar__btn navbar__btn">
@@ -180,6 +183,7 @@
               </h4>
             </a>
 
+            <!--This links to our accomodations page, which has information about the different hotels available near the theme park-->
             <a href="/Pages/accommodations.html" class="btn navbar__btn navbar__btn--active">
               <h4 class="btn__text">
                 <img src="../Images/svg/single-bed.svg" alt="bed icon" class="navbar__icon" />
@@ -196,6 +200,7 @@
             </a>
           </div>
         </nav>
+        <!-- This is the banner text-->
         <div class="banner__content">
           <h1 class="l-heading">Stay In The Park</h1>
           <p class="lead">
@@ -233,8 +238,10 @@
 
 
     <!--This is the main section of the website-->
+    <!--A section containing 3 different accomodation facilities at Aurora Park-->
     <section class="content">
       <ul class="content__container">
+        <!--Aurora theme resort section-->
         <li class="content__card">
           <img src="/Images/CoolParkThemeResort.jpg" alt="Aurora Theme Resort" class="content__img">
           <div class="content__text">
@@ -243,6 +250,8 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
+
+        <!--CastleHotel section-->
         <li class="content__card">
           <img src="/Images/CastleHotel.jpeg" alt="Castle Hotel" class="content__img">
           <div class="content__text">
@@ -251,6 +260,8 @@
             <a href="#" class="content__btn ">Read More!</a>
           </div>
         </li>
+
+        <!--SpaceHotel section-->
         <li class="content__card">
           <img src="/Images/SpaceHotel.jpg" alt="A roller coaster" class="content__img">
           <div class="content__text">
@@ -268,6 +279,7 @@
     <footer class=" footer">
       <!--Our footer includes our social media presence some fine print-->
       <div class="social">
+        <!-- This div contains the social media icons. We used an external icon library to get icons with similar styling -->
         <h4>Follow us on social media!</h4>
         <div class="icon-container">
           <i class="fab fa-facebook"></i>
@@ -275,6 +287,7 @@
           <i class="fab fa-twitter-square"></i>
         </div>
       </div>
+      <!-- This is just some fine print -->
       <small class="copyright">Copyright © Aurora Park. All Rights Reserved.</small>
     </footer>
 
